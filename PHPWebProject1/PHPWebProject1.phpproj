@@ -15,6 +15,16 @@
     <IncludeDebugInformation>false</IncludeDebugInformation>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Connect.php" />
     <Compile Include="index.php" />
+    <Compile Include="pages\dataTables.php" />
+    <Compile Include="pages\footer.php" />
+    <Compile Include="pages\header.php" />
+    <Compile Include="pages\home.php" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="images\" />
+    <Folder Include="scripts\" />
+    <Folder Include="pages\" />
   </ItemGroup>
 </Project>
