@@ -9,7 +9,8 @@
 	//collation-server=utf8_slovak_ci
 
 	//if($_GET["hladaj"]) $sql = "SELECT * FROM knihy WHERE nazov='".$_GET["hladaj"]."'";		//ak je presná zhoda
-	if(isset($_GET["hladaj"])) $sql = "SELECT * FROM knihy WHERE rok LIKE '%".$_GET["hladaj"]."%'" OR "rok LIKE '%".$_GET["hladaj"]."%'";	//ak obsahuje h¾adaný reazec
+	if(isset($_GET["hladaj"])) $sql = "SELECT * FROM knihy WHERE rok LIKE '%".$_GET["hladaj"]."%' OR nazov LIKE '%".$_GET["hladaj"]."%'";	//ak obsahuje h¾adaný reazec
+
 	else $sql = "SELECT * FROM knihy";
 	//$sql = "SELECT * FROM knihy WHERE autor LIKE 'Ján PILLÁR 1'";	//ORDER BY xxxx LIMIT 9
 	$result = $conn->query($sql);
