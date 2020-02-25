@@ -27,4 +27,7 @@
     <Folder Include="scripts\" />
     <Folder Include="pages\" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="images\obr1.jpg" />
+  </ItemGroup>
 </Project>
